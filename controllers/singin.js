@@ -23,7 +23,7 @@ async function InsertVerifyUser(name, email, password){
         await newUser.save();
         console.log(newUser, "signin -verifyUser saved in DB");       
 // 1st create the activation ink and write content
-        const activationLink = `http://localhost:4000/signin/${token}`
+        const activationLink = `https://auth-back-jht5.onrender.com/signin/${token}`
         console.log(activationLink)
 
         const content = `<h4> Hi there </h4>
