@@ -5,7 +5,9 @@ dotenv.config();
 
 // byDefault it run on the localhost port 6379
 const redisClient = () =>{
-      return redis.createClient()
+      return redis.createClient({
+             url : process.env.redis_url
+      })
 } 
 
 const client = redisClient();
