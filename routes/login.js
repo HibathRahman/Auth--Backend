@@ -17,7 +17,7 @@ client.connect()
 router.post('/verify', async (req, res)=>{
    try{
     const {email , password} = await req.body;
-    console.log(email , password , "login ID");
+   
 
     const loginCredentials = await AuthenticaeUser(email , password)
     console.log(loginCredentials , "login Authentic user");
