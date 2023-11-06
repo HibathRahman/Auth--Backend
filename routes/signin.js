@@ -28,7 +28,7 @@ router.get("/:token", async(req, res) => {
 router.post("/verify", async(req, res) => {
     try{
             const {name, email, password} = await req.body;
-                console.log(name, email, password , "signin ID ");
+               ;
 
            const registerCredentials = await CheckUser(email);
                 console.log(registerCredentials , "sign checked used")
